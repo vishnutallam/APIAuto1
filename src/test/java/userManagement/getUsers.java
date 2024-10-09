@@ -433,7 +433,7 @@ public class getUsers extends BaseTest {
         System.out.println("hardAssert");
     }
 
-    @Test
+    @Test(description="branch")
     public void softAssertion() {
 
         System.out.println("softAssert");
