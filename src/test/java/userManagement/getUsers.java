@@ -441,7 +441,7 @@ public class getUsers extends BaseTest {
         SoftAssertionUtil.assertAll();
     }
 
-    @Test
+    @Test(description = "description is validateWithSoftAssertUtil")
     public void validateWithSoftAssertUtil() {
         RestAssured.baseURI = "https://reqres.in/api";
         Response response = given()
