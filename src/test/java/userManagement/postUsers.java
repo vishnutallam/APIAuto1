@@ -176,7 +176,7 @@ public class postUsers {
         System.out.println(response.getBody().asString());
     }
 
-    @Test
+    @Test(description="master branch")
     public void validatePutWithPojo() {
 
         postRequestBody putRequest = new postRequestBody();
