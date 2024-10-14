@@ -205,7 +205,7 @@ public class postUsers {
         System.out.println(response.getBody().asString());
     }
 
-    @Test(description = "threetest branch")
+    @Test(description = "threetest branch,master branch")
     public void validatePatchWithResponsePojo() {
         String job = "morpheus";
         postRequestBody patchRequest = new postRequestBody();
