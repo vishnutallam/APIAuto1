@@ -441,7 +441,8 @@ public class getUsers extends BaseTest {
         SoftAssertionUtil.assertAll();
     }
 
-    @Test(description = "description is validateWithSoftAssertUtil")
+    @Test
+
     public void validateWithSoftAssertUtil() {
         RestAssured.baseURI = "https://reqres.in/api";
         Response response = given()
@@ -528,6 +529,16 @@ public class getUsers extends BaseTest {
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+    }
+        @Test(description="push from eclipse")
+        public void Test2() throws IOException, ParseException {
+            JsonReader.getJsonArrayData("languages", 2);
+            System.out.println(JsonReader.getJsonArrayData("languages", 2));//to print the value use syso
+            JSONArray jsonArray = getJsonArray("contact");
+            Iterator<String> iterator = jsonArray.iterator();
+            while (iterator.hasNext()) {
+                System.out.println(iterator.next());
+            }
     }
 }
 
